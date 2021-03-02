@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ColoriPreferiti</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+
+      h1 {
+        color: red;
+        text-align: center;
+        line-height: 500px;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="colore-favorito">Ciao</h1>
+    <script>
+      var nome = prompt("Inserisci il tuo Nome");
+      var cognome = prompt("Inserisci il tuo Cognome");
+      var colore = prompt("Qual'è il tuo colore preferito??");
+      var infoUtente = nome + (" ") + cognome + (" ") + colore + (" ") + 19;  //non ho capito se 19 è un errore di battitura nelle info dell'esercizio, in caso l'ho messo. Inoltre come prova ho messo gli spazi tra gli elementi
+
+      console.log(nome,cognome,colore,infoUtente)   // per vedere gli elementi nella console
+      document.getElementById("colore-favorito").innerHTML = infoUtente;
+    </script>
+  </body>
+</html>
